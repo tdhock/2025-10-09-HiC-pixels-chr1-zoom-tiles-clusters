@@ -44,6 +44,7 @@
 "na.rm": false,
 "fill": "transparent",
 "colour": "#00FF00",
+"chunk_vars": "Cluster",
 "showSelected": "Cluster",
 "help_showSelected": "Cluster" 
 },
@@ -54,16 +55,75 @@
 "showSelected1": "factor",
 "PANEL": "integer" 
 },
-"chunk_order": [],
+"chunk_order": [
+ "Cluster" 
+],
 "nest_order": [
- "showSelected1",
-"group" 
+ "group" 
 ],
-"subset_order": [
- "showSelected1" 
-],
-"chunks": 1,
-"total": 1 
+"subset_order": [],
+"chunks": {
+ "3644": 1,
+"3013": 2,
+"5423": 3,
+"3547": 4,
+"1722": 5,
+"3974": 6,
+"2576": 7,
+"2875": 8,
+"3008": 9,
+"4665": 10,
+"9": 11,
+"1381": 12,
+"6718": 13,
+"3353": 14,
+"6066": 15,
+"4428": 16,
+"3034": 17,
+"4497": 18,
+"1986": 19,
+"4860": 20,
+"914": 21,
+"6018": 22,
+"2369": 23,
+"6720": 24,
+"4262": 25,
+"2132": 26,
+"3197": 27,
+"1827": 28,
+"1923": 29,
+"6392": 30,
+"6704": 31,
+"2108": 32,
+"4668": 33,
+"706": 34,
+"6239": 35,
+"6706": 36,
+"1382": 37,
+"6705": 38,
+"4454": 39,
+"6708": 40,
+"3323": 41,
+"2004": 42,
+"894": 43,
+"3051": 44,
+"3984": 45,
+"2792": 46,
+"7024": 47,
+"4647": 48,
+"7026": 49,
+"2549": 50,
+"5238": 51,
+"3171": 52,
+"3932": 53,
+"5908": 54,
+"2194": 55,
+"3847": 56,
+"4341": 57,
+"6002": 58,
+"6857": 59 
+},
+"total": 59 
 },
 "geom3_tile_pixelTiles": {
  "geom": "rect",
@@ -191,9 +251,50 @@
 },
 "total": 4 
 },
-"geom6_tile_volcanoHeat": {
+"geom6_text_pixelZoom": {
+ "geom": "text",
+"classed": "geom6_text_pixelZoom",
+"aes": {
+ "x": "rel_x",
+"y": "rel_y",
+"label": "label",
+"group": "1",
+"showSelected1": "Cluster",
+"showSelected2": "round_regions" 
+},
+"params": {
+ "parse": false,
+"check_overlap": false,
+"na.rm": false,
+"na.rm": false,
+"size":       20,
+"showSelected": [ "Cluster", "round_regions" ],
+"help_showSelected": [ "Cluster", "round_regions" ] 
+},
+"types": {
+ "x": "numeric",
+"y": "numeric",
+"label": "character",
+"group": "character",
+"showSelected1": "factor",
+"showSelected2": "character",
+"PANEL": "integer" 
+},
+"chunk_order": [],
+"nest_order": [
+ "showSelected1",
+"showSelected2" 
+],
+"subset_order": [
+ "showSelected1",
+"showSelected2" 
+],
+"chunks": 1,
+"total": 1 
+},
+"geom7_tile_volcanoHeat": {
  "geom": "rect",
-"classed": "geom6_tile_volcanoHeat",
+"classed": "geom7_tile_volcanoHeat",
 "aes": {
  "x": "round_logFC",
 "y": "round_neg.log10.p",
@@ -222,9 +323,9 @@
 "chunks": 1,
 "total": 1 
 },
-"geom7_point_volcanoHeat": {
+"geom8_point_volcanoHeat": {
  "geom": "point",
-"classed": "geom7_point_volcanoHeat",
+"classed": "geom8_point_volcanoHeat",
 "aes": {
  "x": "logFC",
 "y": "neg.log10.p",
@@ -233,7 +334,9 @@
 "params": {
  "na.rm": false,
 "na.rm": false,
-"colour": "#00FF00",
+"colour": "#000000",
+"fill": "#00FF00",
+"chunk_vars": "Cluster",
 "showSelected": "Cluster",
 "help_showSelected": "Cluster" 
 },
@@ -244,19 +347,77 @@
 "PANEL": "integer",
 "group": "character" 
 },
-"chunk_order": [],
-"nest_order": [
- "showSelected1" 
+"chunk_order": [
+ "Cluster" 
 ],
-"subset_order": [
- "showSelected1" 
-],
-"chunks": 1,
-"total": 1 
+"nest_order": [],
+"subset_order": [],
+"chunks": {
+ "3644": 1,
+"3013": 2,
+"5423": 3,
+"3547": 4,
+"1722": 5,
+"3974": 6,
+"2576": 7,
+"2875": 8,
+"3008": 9,
+"4665": 10,
+"9": 11,
+"1381": 12,
+"6718": 13,
+"3353": 14,
+"6066": 15,
+"4428": 16,
+"3034": 17,
+"4497": 18,
+"1986": 19,
+"4860": 20,
+"914": 21,
+"6018": 22,
+"2369": 23,
+"6720": 24,
+"4262": 25,
+"2132": 26,
+"3197": 27,
+"1827": 28,
+"1923": 29,
+"6392": 30,
+"6704": 31,
+"2108": 32,
+"4668": 33,
+"706": 34,
+"6239": 35,
+"6706": 36,
+"1382": 37,
+"6705": 38,
+"4454": 39,
+"6708": 40,
+"3323": 41,
+"2004": 42,
+"894": 43,
+"3051": 44,
+"3984": 45,
+"2792": 46,
+"7024": 47,
+"4647": 48,
+"7026": 49,
+"2549": 50,
+"5238": 51,
+"3171": 52,
+"3932": 53,
+"5908": 54,
+"2194": 55,
+"3847": 56,
+"4341": 57,
+"6002": 58,
+"6857": 59 
 },
-"geom8_tile_volcanoHeat": {
+"total": 59 
+},
+"geom9_tile_volcanoHeat": {
  "geom": "rect",
-"classed": "geom8_tile_volcanoHeat",
+"classed": "geom9_tile_volcanoHeat",
 "aes": {
  "x": "round_logFC",
 "y": "round_neg.log10.p",
@@ -286,9 +447,9 @@
 "chunks": 1,
 "total": 1 
 },
-"geom9_point_volcanoZoom": {
+"geom10_point_volcanoZoom": {
  "geom": "point",
-"classed": "geom9_point_volcanoZoom",
+"classed": "geom10_point_volcanoZoom",
 "aes": {
  "x": "relative_logFC",
 "y": "relative_neg.log10.p",
@@ -302,6 +463,7 @@
 "fill": "#FFFFFF",
 "colour": "#00FF00",
 "showSelected": "volcano_bin",
+"chunk_vars": "volcano_bin",
 "colour_off": "#000000",
 "clickSelects": "Cluster",
 "help_showSelected": "volcano_bin",
@@ -315,15 +477,114 @@
 "PANEL": "integer",
 "group": "character" 
 },
-"chunk_order": [],
-"nest_order": [
- "showSelected1" 
+"chunk_order": [
+ "volcano_bin" 
 ],
-"subset_order": [
- "showSelected1" 
-],
-"chunks": 1,
-"total": 1 
+"nest_order": [],
+"subset_order": [],
+"chunks": {
+ "logFC=-1.5 -log10(p)=0": 1,
+"logFC=-1.25 -log10(p)=35": 2,
+"logFC=-1 -log10(p)=15": 3,
+"logFC=-0.75 -log10(p)=10": 4,
+"logFC=-1.25 -log10(p)=15": 5,
+"logFC=-1.25 -log10(p)=20": 6,
+"logFC=-1.5 -log10(p)=35": 7,
+"logFC=-1.5 -log10(p)=30": 8,
+"logFC=-1.75 -log10(p)=45": 9,
+"logFC=-0.5 -log10(p)=5": 10,
+"logFC=-0.25 -log10(p)=0": 11,
+"logFC=0 -log10(p)=0": 12,
+"logFC=0.25 -log10(p)=0": 13,
+"logFC=0.5 -log10(p)=5": 14,
+"logFC=0.5 -log10(p)=0": 15,
+"logFC=1 -log10(p)=10": 16,
+"logFC=0.75 -log10(p)=5": 17,
+"logFC=1 -log10(p)=15": 18,
+"logFC=1.25 -log10(p)=10": 19,
+"logFC=0.75 -log10(p)=0": 20,
+"logFC=1 -log10(p)=5": 21,
+"logFC=-0.5 -log10(p)=0": 22,
+"logFC=-0.75 -log10(p)=0": 23,
+"logFC=-1 -log10(p)=0": 24,
+"logFC=1.5 -log10(p)=0": 25,
+"logFC=-1.25 -log10(p)=0": 26,
+"logFC=-2 -log10(p)=0": 27,
+"logFC=1.25 -log10(p)=0": 28,
+"logFC=1 -log10(p)=0": 29,
+"logFC=-1.75 -log10(p)=0": 30,
+"logFC=2 -log10(p)=0": 31,
+"logFC=-1 -log10(p)=30": 32,
+"logFC=-0.75 -log10(p)=15": 33,
+"logFC=1.25 -log10(p)=5": 34,
+"logFC=-3 -log10(p)=5": 35,
+"logFC=-2.5 -log10(p)=0": 36,
+"logFC=-0.75 -log10(p)=5": 37,
+"logFC=3 -log10(p)=5": 38,
+"logFC=-0.5 -log10(p)=10": 39,
+"logFC=-0.25 -log10(p)=5": 40,
+"logFC=-1 -log10(p)=10": 41,
+"logFC=-1.25 -log10(p)=5": 42,
+"logFC=0.25 -log10(p)=5": 43,
+"logFC=-2 -log10(p)=5": 44,
+"logFC=-1.5 -log10(p)=5": 45,
+"logFC=-0.75 -log10(p)=25": 46,
+"logFC=-1.5 -log10(p)=25": 47,
+"logFC=-1 -log10(p)=5": 48,
+"logFC=-1.5 -log10(p)=20": 49,
+"logFC=-4.25 -log10(p)=0": 50,
+"logFC=1.75 -log10(p)=0": 51,
+"logFC=-1 -log10(p)=20": 52,
+"logFC=-1.75 -log10(p)=35": 53,
+"logFC=-1.75 -log10(p)=30": 54,
+"logFC=-1.75 -log10(p)=5": 55,
+"logFC=-1.25 -log10(p)=25": 56,
+"logFC=-1.25 -log10(p)=10": 57,
+"logFC=-1.25 -log10(p)=30": 58,
+"logFC=-1 -log10(p)=40": 59,
+"logFC=1.5 -log10(p)=5": 60,
+"logFC=-1 -log10(p)=35": 61,
+"logFC=-1.25 -log10(p)=50": 62,
+"logFC=-2 -log10(p)=10": 63,
+"logFC=-1.5 -log10(p)=10": 64,
+"logFC=-2 -log10(p)=15": 65,
+"logFC=-2.5 -log10(p)=5": 66,
+"logFC=-0.75 -log10(p)=20": 67,
+"logFC=-1.5 -log10(p)=50": 68,
+"logFC=-1.5 -log10(p)=65": 69,
+"logFC=-1.5 -log10(p)=45": 70,
+"logFC=-1.5 -log10(p)=55": 71,
+"logFC=-1.25 -log10(p)=45": 72,
+"logFC=-1.25 -log10(p)=60": 73,
+"logFC=-1.25 -log10(p)=55": 74,
+"logFC=-1.25 -log10(p)=70": 75,
+"logFC=2.25 -log10(p)=5": 76,
+"logFC=-1.5 -log10(p)=95": 77,
+"logFC=-1 -log10(p)=25": 78,
+"logFC=-1.5 -log10(p)=15": 79,
+"logFC=-1.75 -log10(p)=10": 80,
+"logFC=-1.5 -log10(p)=85": 81,
+"logFC=2.75 -log10(p)=5": 82,
+"logFC=-1.25 -log10(p)=65": 83,
+"logFC=1.75 -log10(p)=5": 84,
+"logFC=-1.25 -log10(p)=40": 85,
+"logFC=2 -log10(p)=5": 86,
+"logFC=-1.75 -log10(p)=15": 87,
+"logFC=2.25 -log10(p)=10": 88,
+"logFC=-1 -log10(p)=45": 89,
+"logFC=1.25 -log10(p)=15": 90,
+"logFC=1.5 -log10(p)=10": 91,
+"logFC=1.75 -log10(p)=10": 92,
+"logFC=1.75 -log10(p)=15": 93,
+"logFC=0.75 -log10(p)=10": 94,
+"logFC=1.5 -log10(p)=15": 95,
+"logFC=2 -log10(p)=15": 96,
+"logFC=2 -log10(p)=10": 97,
+"logFC=-1.5 -log10(p)=60": 98,
+"logFC=1.25 -log10(p)=20": 99,
+"logFC=-1.75 -log10(p)=40": 100 
+},
+"total": 100 
 } 
 },
 "selectors": {
@@ -331,14 +592,16 @@
  "is.variable.value": false,
 "type": "single",
 "showSelected": true,
+"chunks": "Cluster",
 "clickSelects": true,
-"selected": "3644",
+"selected": "6718",
 "levels": [ "3644", "3013", "5423", "3547", "1722", "3974", "2576", "2875", "3008", "4665", "9", "1381", "6718", "3353", "6066", "4428", "3034", "4497", "1986", "4860", "914", "6018", "2369", "6720", "4262", "2132", "3197", "1827", "1923", "6392", "6704", "2108", "4668", "706", "6239", "6706", "1382", "6705", "4454", "6708", "3323", "2004", "894", "3051", "3984", "2792", "7024", "4647", "7026", "2549", "5238", "3171", "3932", "5908", "2194", "3847", "4341", "6002", "6857" ],
 "update": [
  "geom2_polygon_pixelTiles",
 "geom5_polygon_pixelZoom",
-"geom7_point_volcanoHeat",
-"geom9_point_volcanoZoom" 
+"geom6_text_pixelZoom",
+"geom8_point_volcanoHeat",
+"geom10_point_volcanoZoom" 
 ] 
 },
 "round_regions": {
@@ -352,7 +615,8 @@
 "update": [
  "geom3_tile_pixelTiles",
 "geom4_polygon_pixelZoom",
-"geom5_polygon_pixelZoom" 
+"geom5_polygon_pixelZoom",
+"geom6_text_pixelZoom" 
 ] 
 },
 "volcano_bin": {
@@ -360,11 +624,12 @@
 "type": "single",
 "clickSelects": true,
 "showSelected": true,
-"selected": "logFC=-1.5 -log10(p)=0",
+"chunks": "volcano_bin",
+"selected": "logFC=-1.5 -log10(p)=95",
 "levels": [ "logFC=-1.5 -log10(p)=0", "logFC=-1.25 -log10(p)=35", "logFC=-1 -log10(p)=15", "logFC=-0.75 -log10(p)=10", "logFC=-1.25 -log10(p)=15", "logFC=-1.25 -log10(p)=20", "logFC=-1.5 -log10(p)=35", "logFC=-1.5 -log10(p)=30", "logFC=-1.75 -log10(p)=45", "logFC=-0.5 -log10(p)=5", "logFC=-0.25 -log10(p)=0", "logFC=0 -log10(p)=0", "logFC=0.25 -log10(p)=0", "logFC=0.5 -log10(p)=5", "logFC=0.5 -log10(p)=0", "logFC=1 -log10(p)=10", "logFC=0.75 -log10(p)=5", "logFC=1 -log10(p)=15", "logFC=1.25 -log10(p)=10", "logFC=0.75 -log10(p)=0", "logFC=1 -log10(p)=5", "logFC=-0.5 -log10(p)=0", "logFC=-0.75 -log10(p)=0", "logFC=-1 -log10(p)=0", "logFC=1.5 -log10(p)=0", "logFC=-1.25 -log10(p)=0", "logFC=-2 -log10(p)=0", "logFC=1.25 -log10(p)=0", "logFC=1 -log10(p)=0", "logFC=-1.75 -log10(p)=0", "logFC=2 -log10(p)=0", "logFC=-1 -log10(p)=30", "logFC=-0.75 -log10(p)=15", "logFC=1.25 -log10(p)=5", "logFC=-3 -log10(p)=5", "logFC=-2.5 -log10(p)=0", "logFC=-0.75 -log10(p)=5", "logFC=3 -log10(p)=5", "logFC=-0.5 -log10(p)=10", "logFC=-0.25 -log10(p)=5", "logFC=-1 -log10(p)=10", "logFC=-1.25 -log10(p)=5", "logFC=0.25 -log10(p)=5", "logFC=-2 -log10(p)=5", "logFC=-1.5 -log10(p)=5", "logFC=-0.75 -log10(p)=25", "logFC=-1.5 -log10(p)=25", "logFC=-1 -log10(p)=5", "logFC=-1.5 -log10(p)=20", "logFC=-4.25 -log10(p)=0", "logFC=1.75 -log10(p)=0", "logFC=-1 -log10(p)=20", "logFC=-1.75 -log10(p)=35", "logFC=-1.75 -log10(p)=30", "logFC=-1.75 -log10(p)=5", "logFC=-1.25 -log10(p)=25", "logFC=-1.25 -log10(p)=10", "logFC=-1.25 -log10(p)=30", "logFC=-1 -log10(p)=40", "logFC=1.5 -log10(p)=5", "logFC=-1 -log10(p)=35", "logFC=-1.25 -log10(p)=50", "logFC=-2 -log10(p)=10", "logFC=-1.5 -log10(p)=10", "logFC=-2 -log10(p)=15", "logFC=-2.5 -log10(p)=5", "logFC=-0.75 -log10(p)=20", "logFC=-1.5 -log10(p)=50", "logFC=-1.5 -log10(p)=65", "logFC=-1.5 -log10(p)=45", "logFC=-1.5 -log10(p)=55", "logFC=-1.25 -log10(p)=45", "logFC=-1.25 -log10(p)=60", "logFC=-1.25 -log10(p)=55", "logFC=-1.25 -log10(p)=70", "logFC=2.25 -log10(p)=5", "logFC=-1.5 -log10(p)=95", "logFC=-1 -log10(p)=25", "logFC=-1.5 -log10(p)=15", "logFC=-1.75 -log10(p)=10", "logFC=-1.5 -log10(p)=85", "logFC=2.75 -log10(p)=5", "logFC=-1.25 -log10(p)=65", "logFC=1.75 -log10(p)=5", "logFC=-1.25 -log10(p)=40", "logFC=2 -log10(p)=5", "logFC=-1.75 -log10(p)=15", "logFC=2.25 -log10(p)=10", "logFC=-1 -log10(p)=45", "logFC=1.25 -log10(p)=15", "logFC=1.5 -log10(p)=10", "logFC=1.75 -log10(p)=10", "logFC=1.75 -log10(p)=15", "logFC=0.75 -log10(p)=10", "logFC=1.5 -log10(p)=15", "logFC=2 -log10(p)=15", "logFC=2 -log10(p)=10", "logFC=-1.5 -log10(p)=60", "logFC=1.25 -log10(p)=20", "logFC=-1.75 -log10(p)=40" ],
 "update": [
- "geom8_tile_volcanoHeat",
-"geom9_point_volcanoZoom" 
+ "geom9_tile_volcanoHeat",
+"geom10_point_volcanoZoom" 
 ] 
 } 
 },
@@ -541,12 +806,12 @@
 "yline": false,
 "yticks": true 
 },
-"xtitle": "x",
+"xtitle": "Genomic bin",
 "strip_text_xsize": "12pt",
 "xsize": "12pt",
 "xangle":        0,
 "xanchor": "middle",
-"ytitle": "y",
+"ytitle": "Interaction distance",
 "strip_text_ysize": "12pt",
 "ysize": "12pt",
 "yangle":        0,
@@ -794,7 +1059,7 @@
 "40",
 "50" 
 ],
-"yrange": [    -3.47,    51.97 ],
+"yrange": [    -3.52,    53.02 ],
 "yline": false,
 "yticks": true 
 },
@@ -835,7 +1100,8 @@
 },
 "geoms": [
  "geom4_polygon_pixelZoom",
-"geom5_polygon_pixelZoom" 
+"geom5_polygon_pixelZoom",
+"geom6_text_pixelZoom" 
 ] 
 },
 "volcanoHeat": {
@@ -1045,9 +1311,9 @@
 "last_in_row": true 
 },
 "geoms": [
- "geom6_tile_volcanoHeat",
-"geom7_point_volcanoHeat",
-"geom8_tile_volcanoHeat" 
+ "geom7_tile_volcanoHeat",
+"geom8_point_volcanoHeat",
+"geom9_tile_volcanoHeat" 
 ] 
 },
 "volcanoZoom": {
@@ -1224,7 +1490,7 @@
 "last_in_row": null 
 },
 "geoms": [
- "geom9_point_volcanoZoom" 
+ "geom10_point_volcanoZoom" 
 ] 
 } 
 },

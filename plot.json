@@ -1,0 +1,1233 @@
+{
+ "geoms": {
+ "geom1_tile_pixelTiles": {
+ "geom": "rect",
+"classed": "geom1_tile_pixelTiles",
+"aes": {
+ "x": "x",
+"y": "y",
+"fill": "mean.logFC" 
+},
+"params": {
+ "na.rm": false,
+"na.rm": false,
+"colour": "transparent" 
+},
+"types": {
+ "fill": "rgb",
+"x": "numeric",
+"y": "numeric",
+"PANEL": "integer",
+"group": "character",
+"xmin": "numeric",
+"xmax": "numeric",
+"ymin": "numeric",
+"ymax": "numeric" 
+},
+"chunk_order": [],
+"nest_order": [],
+"subset_order": [],
+"chunks": 1,
+"total": 1 
+},
+"geom2_polygon_pixelTiles": {
+ "geom": "polygon",
+"classed": "geom2_polygon_pixelTiles",
+"aes": {
+ "x": "region_x",
+"y": "region_y",
+"group": "paste(Cluster, id)",
+"showSelected1": "Cluster" 
+},
+"params": {
+ "na.rm": false,
+"na.rm": false,
+"fill": "transparent",
+"colour": "#00FF00",
+"showSelected": "Cluster",
+"help_showSelected": "Cluster" 
+},
+"types": {
+ "x": "numeric",
+"y": "numeric",
+"group": "character",
+"showSelected1": "factor",
+"PANEL": "integer" 
+},
+"chunk_order": [],
+"nest_order": [
+ "showSelected1",
+"group" 
+],
+"subset_order": [
+ "showSelected1" 
+],
+"chunks": 1,
+"total": 1 
+},
+"geom3_tile_pixelTiles": {
+ "geom": "rect",
+"classed": "geom3_tile_pixelTiles",
+"aes": {
+ "x": "x",
+"y": "y",
+"clickSelects": "round_regions" 
+},
+"params": {
+ "na.rm": false,
+"na.rm": false,
+"fill": "transparent",
+"colour": "#000000",
+"clickSelects": "round_regions",
+"help_clickSelects": "round_regions" 
+},
+"types": {
+ "x": "numeric",
+"y": "numeric",
+"clickSelects": "character",
+"PANEL": "integer",
+"group": "character",
+"xmin": "numeric",
+"xmax": "numeric",
+"ymin": "numeric",
+"ymax": "numeric" 
+},
+"chunk_order": [],
+"nest_order": [],
+"subset_order": [],
+"chunks": 1,
+"total": 1 
+},
+"geom4_polygon_pixelZoom": {
+ "geom": "polygon",
+"classed": "geom4_polygon_pixelZoom",
+"aes": {
+ "x": "rel_corner_x",
+"y": "rel_corner_y",
+"fill": "logFC",
+"colour": "neg.log10.p",
+"group": "rel_regions",
+"showSelected1": "round_regions" 
+},
+"params": {
+ "na.rm": false,
+"na.rm": false,
+"showSelected": "round_regions",
+"help_showSelected": "round_regions" 
+},
+"types": {
+ "fill": "rgb",
+"colour": "rgb",
+"x": "numeric",
+"y": "numeric",
+"group": "character",
+"showSelected1": "character",
+"PANEL": "integer" 
+},
+"chunk_order": [
+ "round_regions" 
+],
+"nest_order": [
+ "group" 
+],
+"subset_order": [],
+"columns": {
+ "common": [
+ "group",
+"x",
+"y" 
+] 
+},
+"chunks": {
+ "150,50": 1,
+"100,0": 2,
+"150,0": 3,
+"200,0": 4 
+},
+"total": 4 
+},
+"geom5_polygon_pixelZoom": {
+ "geom": "polygon",
+"classed": "geom5_polygon_pixelZoom",
+"aes": {
+ "x": "rel_region_x",
+"y": "rel_region_y",
+"group": "paste(Cluster, id)",
+"clickSelects": "Cluster",
+"showSelected1": "round_regions" 
+},
+"params": {
+ "na.rm": false,
+"na.rm": false,
+"fill": "transparent",
+"colour": "#00FF00",
+"alpha":        1,
+"alpha_off":      0.2,
+"clickSelects": "Cluster",
+"showSelected": "round_regions",
+"help_clickSelects": "Cluster",
+"help_showSelected": "round_regions" 
+},
+"types": {
+ "x": "numeric",
+"y": "numeric",
+"group": "character",
+"clickSelects": "factor",
+"showSelected1": "character",
+"PANEL": "integer" 
+},
+"chunk_order": [
+ "round_regions" 
+],
+"nest_order": [
+ "group" 
+],
+"subset_order": [],
+"chunks": {
+ "100,0": 1,
+"150,0": 2,
+"150,50": 3,
+"200,0": 4 
+},
+"total": 4 
+},
+"geom6_tile_volcanoHeat": {
+ "geom": "rect",
+"classed": "geom6_tile_volcanoHeat",
+"aes": {
+ "x": "round_logFC",
+"y": "round_neg.log10.p",
+"fill": "log10(pixels)" 
+},
+"params": {
+ "na.rm": false,
+"na.rm": false,
+"colour": "#BEBEBE",
+"size":        1 
+},
+"types": {
+ "fill": "rgb",
+"x": "numeric",
+"y": "numeric",
+"PANEL": "integer",
+"group": "character",
+"xmin": "numeric",
+"xmax": "numeric",
+"ymin": "numeric",
+"ymax": "numeric" 
+},
+"chunk_order": [],
+"nest_order": [],
+"subset_order": [],
+"chunks": 1,
+"total": 1 
+},
+"geom7_point_volcanoHeat": {
+ "geom": "point",
+"classed": "geom7_point_volcanoHeat",
+"aes": {
+ "x": "logFC",
+"y": "neg.log10.p",
+"showSelected1": "Cluster" 
+},
+"params": {
+ "na.rm": false,
+"na.rm": false,
+"colour": "#00FF00",
+"showSelected": "Cluster",
+"help_showSelected": "Cluster" 
+},
+"types": {
+ "x": "numeric",
+"y": "numeric",
+"showSelected1": "factor",
+"PANEL": "integer",
+"group": "character" 
+},
+"chunk_order": [],
+"nest_order": [
+ "showSelected1" 
+],
+"subset_order": [
+ "showSelected1" 
+],
+"chunks": 1,
+"total": 1 
+},
+"geom8_tile_volcanoHeat": {
+ "geom": "rect",
+"classed": "geom8_tile_volcanoHeat",
+"aes": {
+ "x": "round_logFC",
+"y": "round_neg.log10.p",
+"clickSelects": "volcano_bin" 
+},
+"params": {
+ "na.rm": false,
+"na.rm": false,
+"fill": "transparent",
+"clickSelects": "volcano_bin",
+"help_clickSelects": "volcano_bin" 
+},
+"types": {
+ "x": "numeric",
+"y": "numeric",
+"clickSelects": "character",
+"PANEL": "integer",
+"group": "character",
+"xmin": "numeric",
+"xmax": "numeric",
+"ymin": "numeric",
+"ymax": "numeric" 
+},
+"chunk_order": [],
+"nest_order": [],
+"subset_order": [],
+"chunks": 1,
+"total": 1 
+},
+"geom9_point_volcanoZoom": {
+ "geom": "point",
+"classed": "geom9_point_volcanoZoom",
+"aes": {
+ "x": "relative_logFC",
+"y": "relative_neg.log10.p",
+"clickSelects": "Cluster",
+"showSelected1": "volcano_bin" 
+},
+"params": {
+ "na.rm": false,
+"na.rm": false,
+"size":        4,
+"fill": "#FFFFFF",
+"colour": "#00FF00",
+"showSelected": "volcano_bin",
+"colour_off": "#000000",
+"clickSelects": "Cluster",
+"help_showSelected": "volcano_bin",
+"help_clickSelects": "Cluster" 
+},
+"types": {
+ "x": "numeric",
+"y": "numeric",
+"clickSelects": "factor",
+"showSelected1": "character",
+"PANEL": "integer",
+"group": "character" 
+},
+"chunk_order": [],
+"nest_order": [
+ "showSelected1" 
+],
+"subset_order": [
+ "showSelected1" 
+],
+"chunks": 1,
+"total": 1 
+} 
+},
+"selectors": {
+ "Cluster": {
+ "is.variable.value": false,
+"type": "single",
+"showSelected": true,
+"clickSelects": true,
+"selected": "3644",
+"levels": [ "3644", "3013", "5423", "3547", "1722", "3974", "2576", "2875", "3008", "4665", "9", "1381", "6718", "3353", "6066", "4428", "3034", "4497", "1986", "4860", "914", "6018", "2369", "6720", "4262", "2132", "3197", "1827", "1923", "6392", "6704", "2108", "4668", "706", "6239", "6706", "1382", "6705", "4454", "6708", "3323", "2004", "894", "3051", "3984", "2792", "7024", "4647", "7026", "2549", "5238", "3171", "3932", "5908", "2194", "3847", "4341", "6002", "6857" ],
+"update": [
+ "geom2_polygon_pixelTiles",
+"geom5_polygon_pixelZoom",
+"geom7_point_volcanoHeat",
+"geom9_point_volcanoZoom" 
+] 
+},
+"round_regions": {
+ "is.variable.value": false,
+"type": "single",
+"clickSelects": true,
+"showSelected": true,
+"chunks": "round_regions",
+"selected": "100,0",
+"levels": [ "100,0", "150,0", "150,50", "200,0" ],
+"update": [
+ "geom3_tile_pixelTiles",
+"geom4_polygon_pixelZoom",
+"geom5_polygon_pixelZoom" 
+] 
+},
+"volcano_bin": {
+ "is.variable.value": false,
+"type": "single",
+"clickSelects": true,
+"showSelected": true,
+"selected": "logFC=-1.5 -log10(p)=0",
+"levels": [ "logFC=-1.5 -log10(p)=0", "logFC=-1.25 -log10(p)=35", "logFC=-1 -log10(p)=15", "logFC=-0.75 -log10(p)=10", "logFC=-1.25 -log10(p)=15", "logFC=-1.25 -log10(p)=20", "logFC=-1.5 -log10(p)=35", "logFC=-1.5 -log10(p)=30", "logFC=-1.75 -log10(p)=45", "logFC=-0.5 -log10(p)=5", "logFC=-0.25 -log10(p)=0", "logFC=0 -log10(p)=0", "logFC=0.25 -log10(p)=0", "logFC=0.5 -log10(p)=5", "logFC=0.5 -log10(p)=0", "logFC=1 -log10(p)=10", "logFC=0.75 -log10(p)=5", "logFC=1 -log10(p)=15", "logFC=1.25 -log10(p)=10", "logFC=0.75 -log10(p)=0", "logFC=1 -log10(p)=5", "logFC=-0.5 -log10(p)=0", "logFC=-0.75 -log10(p)=0", "logFC=-1 -log10(p)=0", "logFC=1.5 -log10(p)=0", "logFC=-1.25 -log10(p)=0", "logFC=-2 -log10(p)=0", "logFC=1.25 -log10(p)=0", "logFC=1 -log10(p)=0", "logFC=-1.75 -log10(p)=0", "logFC=2 -log10(p)=0", "logFC=-1 -log10(p)=30", "logFC=-0.75 -log10(p)=15", "logFC=1.25 -log10(p)=5", "logFC=-3 -log10(p)=5", "logFC=-2.5 -log10(p)=0", "logFC=-0.75 -log10(p)=5", "logFC=3 -log10(p)=5", "logFC=-0.5 -log10(p)=10", "logFC=-0.25 -log10(p)=5", "logFC=-1 -log10(p)=10", "logFC=-1.25 -log10(p)=5", "logFC=0.25 -log10(p)=5", "logFC=-2 -log10(p)=5", "logFC=-1.5 -log10(p)=5", "logFC=-0.75 -log10(p)=25", "logFC=-1.5 -log10(p)=25", "logFC=-1 -log10(p)=5", "logFC=-1.5 -log10(p)=20", "logFC=-4.25 -log10(p)=0", "logFC=1.75 -log10(p)=0", "logFC=-1 -log10(p)=20", "logFC=-1.75 -log10(p)=35", "logFC=-1.75 -log10(p)=30", "logFC=-1.75 -log10(p)=5", "logFC=-1.25 -log10(p)=25", "logFC=-1.25 -log10(p)=10", "logFC=-1.25 -log10(p)=30", "logFC=-1 -log10(p)=40", "logFC=1.5 -log10(p)=5", "logFC=-1 -log10(p)=35", "logFC=-1.25 -log10(p)=50", "logFC=-2 -log10(p)=10", "logFC=-1.5 -log10(p)=10", "logFC=-2 -log10(p)=15", "logFC=-2.5 -log10(p)=5", "logFC=-0.75 -log10(p)=20", "logFC=-1.5 -log10(p)=50", "logFC=-1.5 -log10(p)=65", "logFC=-1.5 -log10(p)=45", "logFC=-1.5 -log10(p)=55", "logFC=-1.25 -log10(p)=45", "logFC=-1.25 -log10(p)=60", "logFC=-1.25 -log10(p)=55", "logFC=-1.25 -log10(p)=70", "logFC=2.25 -log10(p)=5", "logFC=-1.5 -log10(p)=95", "logFC=-1 -log10(p)=25", "logFC=-1.5 -log10(p)=15", "logFC=-1.75 -log10(p)=10", "logFC=-1.5 -log10(p)=85", "logFC=2.75 -log10(p)=5", "logFC=-1.25 -log10(p)=65", "logFC=1.75 -log10(p)=5", "logFC=-1.25 -log10(p)=40", "logFC=2 -log10(p)=5", "logFC=-1.75 -log10(p)=15", "logFC=2.25 -log10(p)=10", "logFC=-1 -log10(p)=45", "logFC=1.25 -log10(p)=15", "logFC=1.5 -log10(p)=10", "logFC=1.75 -log10(p)=10", "logFC=1.75 -log10(p)=15", "logFC=0.75 -log10(p)=10", "logFC=1.5 -log10(p)=15", "logFC=2 -log10(p)=15", "logFC=2 -log10(p)=10", "logFC=-1.5 -log10(p)=60", "logFC=1.25 -log10(p)=20", "logFC=-1.75 -log10(p)=40" ],
+"update": [
+ "geom8_tile_volcanoHeat",
+"geom9_point_volcanoZoom" 
+] 
+} 
+},
+"plots": {
+ "pixelTiles": {
+ "panel_margin_lines":     0.27,
+"legend": {
+ "mean.logFC": {
+ "guide": "legend",
+"geoms": "polygon",
+"title": "mean.logFC",
+"class": "mean.logFC",
+"selector": null,
+"is_discrete": false,
+"legend_type": "fill",
+"text_size": "9.6pt",
+"title_size": "12pt",
+"entries": [
+ {
+ "polygonfill": "#E7CBC8",
+"polygoncolour": "transparent",
+"polygonsize":      0.1,
+"polygonlinetype":        1,
+"label": "-0.1" 
+},
+{
+ "polygonfill": "#CD9A93",
+"polygoncolour": "transparent",
+"polygonsize":      0.1,
+"polygonlinetype":        1,
+"label": "-0.2" 
+},
+{
+ "polygonfill": "#B06962",
+"polygoncolour": "transparent",
+"polygonsize":      0.1,
+"polygonlinetype":        1,
+"label": "-0.3" 
+},
+{
+ "polygonfill": "#903934",
+"polygoncolour": "transparent",
+"polygonsize":      0.1,
+"polygonlinetype":        1,
+"label": "-0.4" 
+} 
+] 
+} 
+},
+"strips": {
+ "top": [
+ "" 
+],
+"right": [
+ "" 
+],
+"n": {
+ "top":        0,
+"right":        0 
+} 
+},
+"layout": {
+ "PANEL": [ 1 ],
+"ROW": [ 1 ],
+"COL": [ 1 ],
+"SCALE_X": [ 1 ],
+"SCALE_Y": [ 1 ],
+"AXIS_X": [ true ],
+"AXIS_Y": [ true ],
+"coord_fixed": [ false ],
+"width_proportion": [        1 ],
+"height_proportion": [        1 ] 
+},
+"panel_background": {
+ "fill": "#FFFFFF",
+"colour": "transparent",
+"size":      0.5,
+"linetype":        1 
+},
+"panel_border": {
+ "fill": "transparent",
+"colour": "#7F7F7F",
+"size":      0.5,
+"linetype":        1 
+},
+"grid_major": {
+ "colour": "#E5E5E5",
+"size":      0.2,
+"linetype":        1,
+"lineend": "butt",
+"loc": {
+ "x": [
+ [
+       50,
+     100,
+     150,
+     200 
+] 
+],
+"y": [
+ [
+        0,
+      25,
+      50,
+      75,
+     100 
+] 
+] 
+} 
+},
+"grid_minor": {
+ "colour": "#FAFAFA",
+"size":      0.5,
+"linetype":        1,
+"lineend": "butt",
+"loc": {
+ "x": [
+ [
+       50,
+      75,
+     100,
+     125,
+     150,
+     175,
+     200 
+] 
+],
+"y": [
+ [
+        0,
+    12.5,
+      25,
+    37.5,
+      50,
+    62.5,
+      75,
+    87.5,
+     100 
+] 
+] 
+} 
+},
+"axis1": {
+ "x": [
+       50,
+     100,
+     150,
+     200 
+],
+"xlab": [
+ "50",
+"100",
+"150",
+"200" 
+],
+"xrange": [     47.5,    212.5 ],
+"xline": false,
+"xticks": true,
+"y": [
+        0,
+      25,
+      50,
+      75,
+     100 
+],
+"ylab": [
+ "0",
+"25",
+"50",
+"75",
+"100" 
+],
+"yrange": [       -6,      104 ],
+"yline": false,
+"yticks": true 
+},
+"xtitle": "x",
+"strip_text_xsize": "12pt",
+"xsize": "12pt",
+"xangle":        0,
+"xanchor": "middle",
+"ytitle": "y",
+"strip_text_ysize": "12pt",
+"ysize": "12pt",
+"yangle":        0,
+"yanchor": "end",
+"xlabs": [
+ "50",
+"100",
+"150",
+"200" 
+],
+"ylabs": [
+ "0",
+"25",
+"50",
+"75",
+"100" 
+],
+"title_size": "14.4pt",
+"options": {
+ "width":      400,
+"height":      300 
+},
+"span": {
+ "rowspan": null,
+"colspan": null,
+"last_in_row": null 
+},
+"geoms": [
+ "geom1_tile_pixelTiles",
+"geom2_polygon_pixelTiles",
+"geom3_tile_pixelTiles" 
+] 
+},
+"pixelZoom": {
+ "panel_margin_lines":     0.27,
+"legend": {
+ "logFC": {
+ "guide": "legend",
+"geoms": "polygon",
+"title": "logFC",
+"class": "logFC",
+"selector": null,
+"is_discrete": false,
+"legend_type": "fill",
+"text_size": "9.6pt",
+"title_size": "12pt",
+"entries": [
+ {
+ "polygonfill": "#A99FD0",
+"polygoncolour": "#FFFFFF",
+"polygonsize":      0.5,
+"polygonlinetype":        1,
+"label": "2" 
+},
+{
+ "polygonfill": "#FFFFFF",
+"polygoncolour": "#FFFFFF",
+"polygonsize":      0.5,
+"polygonlinetype":        1,
+"label": "0" 
+},
+{
+ "polygonfill": "#CD9993",
+"polygoncolour": "#FFFFFF",
+"polygonsize":      0.5,
+"polygonlinetype":        1,
+"label": "-2" 
+},
+{
+ "polygonfill": "#8F3733",
+"polygoncolour": "#FFFFFF",
+"polygonsize":      0.5,
+"polygonlinetype":        1,
+"label": "-4" 
+} 
+] 
+},
+"neg.log10.p": {
+ "guide": "legend",
+"geoms": "polygon",
+"title": "neg.log10.p",
+"class": "neg.log10.p",
+"selector": null,
+"is_discrete": false,
+"legend_type": "colour",
+"text_size": "9.6pt",
+"title_size": "12pt",
+"entries": [
+ {
+ "polygoncolour": "#333333",
+"polygonfill": "#FFFFFF",
+"polygonsize":      0.5,
+"polygonlinetype":        1,
+"label": "75" 
+},
+{
+ "polygoncolour": "#717171",
+"polygonfill": "#FFFFFF",
+"polygonsize":      0.5,
+"polygonlinetype":        1,
+"label": "50" 
+},
+{
+ "polygoncolour": "#B5B5B5",
+"polygonfill": "#FFFFFF",
+"polygonsize":      0.5,
+"polygonlinetype":        1,
+"label": "25" 
+} 
+] 
+} 
+},
+"strips": {
+ "top": [
+ "" 
+],
+"right": [
+ "" 
+],
+"n": {
+ "top":        0,
+"right":        0 
+} 
+},
+"layout": {
+ "PANEL": [ 1 ],
+"ROW": [ 1 ],
+"COL": [ 1 ],
+"SCALE_X": [ 1 ],
+"SCALE_Y": [ 1 ],
+"AXIS_X": [ true ],
+"AXIS_Y": [ true ],
+"coord_fixed": [ false ],
+"width_proportion": [        1 ],
+"height_proportion": [        1 ] 
+},
+"panel_background": {
+ "fill": "#FFFFFF",
+"colour": "transparent",
+"size":      0.5,
+"linetype":        1 
+},
+"panel_border": {
+ "fill": "transparent",
+"colour": "#7F7F7F",
+"size":      0.5,
+"linetype":        1 
+},
+"grid_major": {
+ "colour": "#E5E5E5",
+"size":      0.2,
+"linetype":        1,
+"lineend": "butt",
+"loc": {
+ "x": [
+ [
+      -40,
+     -30,
+     -20,
+     -10,
+       0 
+] 
+],
+"y": [
+ [
+        0,
+      10,
+      20,
+      30,
+      40,
+      50 
+] 
+] 
+} 
+},
+"grid_minor": {
+ "colour": "#FAFAFA",
+"size":      0.5,
+"linetype":        1,
+"lineend": "butt",
+"loc": {
+ "x": [
+ [
+      -45,
+     -40,
+     -35,
+     -30,
+     -25,
+     -20,
+     -15,
+     -10,
+      -5,
+       0,
+       5 
+] 
+],
+"y": [
+ [
+        0,
+       5,
+      10,
+      15,
+      20,
+      25,
+      30,
+      35,
+      40,
+      45,
+      50 
+] 
+] 
+} 
+},
+"axis1": {
+ "x": [
+      -40,
+     -30,
+     -20,
+     -10,
+       0 
+],
+"xlab": [
+ "-40",
+"-30",
+"-20",
+"-10",
+"0" 
+],
+"xrange": [  -47.995,    7.995 ],
+"xline": false,
+"xticks": true,
+"y": [
+        0,
+      10,
+      20,
+      30,
+      40,
+      50 
+],
+"ylab": [
+ "0",
+"10",
+"20",
+"30",
+"40",
+"50" 
+],
+"yrange": [    -3.47,    51.97 ],
+"yline": false,
+"yticks": true 
+},
+"xtitle": "rel_corner_x",
+"strip_text_xsize": "12pt",
+"xsize": "12pt",
+"xangle":        0,
+"xanchor": "middle",
+"ytitle": "rel_corner_y",
+"strip_text_ysize": "12pt",
+"ysize": "12pt",
+"yangle":        0,
+"yanchor": "end",
+"xlabs": [
+ "-40",
+"-30",
+"-20",
+"-10",
+"0" 
+],
+"ylabs": [
+ "0",
+"10",
+"20",
+"30",
+"40",
+"50" 
+],
+"title_size": "14.4pt",
+"options": {
+ "width":      800,
+"height":      800 
+},
+"span": {
+ "rowspan":        3,
+"colspan": null,
+"last_in_row": true 
+},
+"geoms": [
+ "geom4_polygon_pixelZoom",
+"geom5_polygon_pixelZoom" 
+] 
+},
+"volcanoHeat": {
+ "panel_margin_lines":     0.27,
+"legend": {
+ "log10(pixels)": {
+ "guide": "legend",
+"geoms": "polygon",
+"title": "log10(pixels)",
+"class": "log10(pixels)",
+"selector": null,
+"is_discrete": false,
+"legend_type": "fill",
+"text_size": "9.6pt",
+"title_size": "12pt",
+"entries": [
+ {
+ "polygonfill": "#131313",
+"polygoncolour": "#BEBEBE",
+"polygonsize":        1,
+"polygonlinetype":        1,
+"label": "3" 
+},
+{
+ "polygonfill": "#585858",
+"polygoncolour": "#BEBEBE",
+"polygonsize":        1,
+"polygonlinetype":        1,
+"label": "2" 
+},
+{
+ "polygonfill": "#A8A8A8",
+"polygoncolour": "#BEBEBE",
+"polygonsize":        1,
+"polygonlinetype":        1,
+"label": "1" 
+},
+{
+ "polygonfill": "#FFFFFF",
+"polygoncolour": "#BEBEBE",
+"polygonsize":        1,
+"polygonlinetype":        1,
+"label": "0" 
+} 
+] 
+} 
+},
+"strips": {
+ "top": [
+ "" 
+],
+"right": [
+ "" 
+],
+"n": {
+ "top":        0,
+"right":        0 
+} 
+},
+"layout": {
+ "PANEL": [ 1 ],
+"ROW": [ 1 ],
+"COL": [ 1 ],
+"SCALE_X": [ 1 ],
+"SCALE_Y": [ 1 ],
+"AXIS_X": [ true ],
+"AXIS_Y": [ true ],
+"coord_fixed": [ false ],
+"width_proportion": [        1 ],
+"height_proportion": [        1 ] 
+},
+"panel_background": {
+ "fill": "#FFFFFF",
+"colour": "transparent",
+"size":      0.5,
+"linetype":        1 
+},
+"panel_border": {
+ "fill": "transparent",
+"colour": "#7F7F7F",
+"size":      0.5,
+"linetype":        1 
+},
+"grid_major": {
+ "colour": "#E5E5E5",
+"size":      0.2,
+"linetype":        1,
+"lineend": "butt",
+"loc": {
+ "x": [
+ [
+       -4,
+      -2,
+       0,
+       2 
+] 
+],
+"y": [
+ [
+        0,
+      25,
+      50,
+      75,
+     100 
+] 
+] 
+} 
+},
+"grid_minor": {
+ "colour": "#FAFAFA",
+"size":      0.5,
+"linetype":        1,
+"lineend": "butt",
+"loc": {
+ "x": [
+ [
+       -4,
+      -3,
+      -2,
+      -1,
+       0,
+       1,
+       2,
+       3 
+] 
+],
+"y": [
+ [
+        0,
+    12.5,
+      25,
+    37.5,
+      50,
+    62.5,
+      75,
+    87.5,
+     100 
+] 
+] 
+} 
+},
+"axis1": {
+ "x": [
+       -4,
+      -2,
+       0,
+       2 
+],
+"xlab": [
+ "-4",
+"-2",
+"0",
+"2" 
+],
+"xrange": [    -4.75,      3.5 ],
+"xline": false,
+"xticks": true,
+"y": [
+        0,
+      25,
+      50,
+      75,
+     100 
+],
+"ylab": [
+ "0",
+"25",
+"50",
+"75",
+"100" 
+],
+"yrange": [     -7.5,    102.5 ],
+"yline": false,
+"yticks": true 
+},
+"xtitle": "round_logFC",
+"strip_text_xsize": "12pt",
+"xsize": "12pt",
+"xangle":        0,
+"xanchor": "middle",
+"ytitle": "round_neg.log10.p",
+"strip_text_ysize": "12pt",
+"ysize": "12pt",
+"yangle":        0,
+"yanchor": "end",
+"xlabs": [
+ "-4",
+"-2",
+"0",
+"2" 
+],
+"ylabs": [
+ "0",
+"25",
+"50",
+"75",
+"100" 
+],
+"title_size": "14.4pt",
+"options": {
+ "width":      400,
+"height":      300 
+},
+"span": {
+ "rowspan": null,
+"colspan": null,
+"last_in_row": true 
+},
+"geoms": [
+ "geom6_tile_volcanoHeat",
+"geom7_point_volcanoHeat",
+"geom8_tile_volcanoHeat" 
+] 
+},
+"volcanoZoom": {
+ "panel_margin_lines":     0.27,
+"legend": {},
+"strips": {
+ "top": [
+ "" 
+],
+"right": [
+ "" 
+],
+"n": {
+ "top":        0,
+"right":        0 
+} 
+},
+"layout": {
+ "PANEL": [ 1 ],
+"ROW": [ 1 ],
+"COL": [ 1 ],
+"SCALE_X": [ 1 ],
+"SCALE_Y": [ 1 ],
+"AXIS_X": [ true ],
+"AXIS_Y": [ true ],
+"coord_fixed": [ false ],
+"width_proportion": [        1 ],
+"height_proportion": [        1 ] 
+},
+"panel_background": {
+ "fill": "#FFFFFF",
+"colour": "transparent",
+"size":      0.5,
+"linetype":        1 
+},
+"panel_border": {
+ "fill": "transparent",
+"colour": "#7F7F7F",
+"size":      0.5,
+"linetype":        1 
+},
+"grid_major": {
+ "colour": "#E5E5E5",
+"size":      0.2,
+"linetype":        1,
+"lineend": "butt",
+"loc": {
+ "x": [
+ [
+     -0.1,
+   -0.05,
+       0,
+    0.05,
+     0.1 
+] 
+],
+"y": [
+ [
+       -2,
+      -1,
+       0,
+       1,
+       2 
+] 
+] 
+} 
+},
+"grid_minor": {
+ "colour": "#FAFAFA",
+"size":      0.5,
+"linetype":        1,
+"lineend": "butt",
+"loc": {
+ "x": [
+ [
+   -0.125,
+    -0.1,
+  -0.075,
+   -0.05,
+  -0.025,
+       0,
+   0.025,
+    0.05,
+   0.075,
+     0.1,
+   0.125 
+] 
+],
+"y": [
+ [
+     -2.5,
+      -2,
+    -1.5,
+      -1,
+    -0.5,
+       0,
+     0.5,
+       1,
+     1.5,
+       2,
+     2.5 
+] 
+] 
+} 
+},
+"axis1": {
+ "x": [
+     -0.1,
+   -0.05,
+       0,
+    0.05,
+     0.1 
+],
+"xlab": [
+ "-0.10",
+"-0.05",
+"0.00",
+"0.05",
+"0.10" 
+],
+"xrange": [ -0.137498, 0.1374891 ],
+"xline": false,
+"xticks": true,
+"y": [
+       -2,
+      -1,
+       0,
+       1,
+       2 
+],
+"ylab": [
+ "-2",
+"-1",
+"0",
+"1",
+"2" 
+],
+"yrange": [ -2.749589, 2.749507 ],
+"yline": false,
+"yticks": true 
+},
+"xtitle": "relative_logFC",
+"strip_text_xsize": "12pt",
+"xsize": "12pt",
+"xangle":        0,
+"xanchor": "middle",
+"ytitle": "relative_neg.log10.p",
+"strip_text_ysize": "12pt",
+"ysize": "12pt",
+"yangle":        0,
+"yanchor": "end",
+"xlabs": [
+ "-0.10",
+"-0.05",
+"0.00",
+"0.05",
+"0.10" 
+],
+"ylabs": [
+ "-2",
+"-1",
+"0",
+"1",
+"2" 
+],
+"title_size": "14.4pt",
+"options": {
+ "width":      400,
+"height":      300 
+},
+"span": {
+ "rowspan": null,
+"colspan": null,
+"last_in_row": null 
+},
+"geoms": [
+ "geom9_point_volcanoZoom" 
+] 
+} 
+},
+"source": "https://github.com/tdhock/hicream-viz/blob/main/data-2025-10-09/figure-pixels-chr1-zoom-tiles-clusters.R",
+"title": "Hi-C pixels chr1 clusters zoom using tiles" 
+}
